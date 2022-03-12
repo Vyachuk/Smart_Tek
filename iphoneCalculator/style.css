@@ -1,0 +1,52 @@
+.wrapper {
+    width: 700px;
+    height: 350px;
+    background-color: black;
+    border-radius: 50px;
+    margin: 100px auto;
+    color: white;
+
+}
+.wrapper__content {
+    margin: 0px 50px;
+    padding: 12px 0px
+}
+.main__display {
+    text-align: end;
+    font-size: 35px;
+    padding-right: 10px;
+}
+.button-block {
+    display: block;
+}
+
+.btn{
+    width: 52px;
+    height: 44px;
+    border: 1px rgb(28, 28, 28);
+    border-radius: 40px;
+    background-color: rgb(33, 33, 33);
+    margin: 5px 2px;
+    font-size: 15px;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:active{
+    background-color: rgb(157, 157, 157);
+    transition: all 0.3s ease-out;
+}
+.btn-orange{
+    background-color: rgb(255, 176, 57);
+}
+.btn-gray{
+    background-color: rgb(116, 116, 116);
+}
+.zero{
+    width: 112px;
+}
+.main__additional-display{
+    margin: -290px 0px 0px 10px;
+    font-size: 12px;
+}
