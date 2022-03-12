@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Iphone Calculate</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__content">
+            <div class="main__display">0</div>
+            <div class="button-block">
+                <div class="btn-first">
+                    <button class="btn">(</button>
+                    <button class="btn">)</button>
+                    <button class="btn" onClick="memoryFunc('clean')">mc</button>
+                    <button class="btn" onClick="memoryFunc('inc')">m+</button>
+                    <button class="btn" onClick="memoryFunc('dec')">m-</button>
+                    <button class="btn" onClick="memoryFunc('result')">mr</button>
+                    <button class="btn btn-gray" onClick="clearAll()">AC</button>
+                    <button class="btn btn-gray" onClick="action('+/-')">+/-</button>
+                    <button class="btn btn-gray" onClick="powerCalc('%')">%</button>
+                    <button class="btn btn-orange" onClick="action('/')">/</button>
+                </div>
+                <div class="btn-second">
+                    <button class="btn">2<sup>nd</sup></button>
+                    <button class="btn" onClick="powerCalc('x2')">x&sup2</button>
+                    <button class="btn" onClick="powerCalc('x3')">x&sup3</button>
+                    <button class="btn" onClick="action('xy')">x<sup>y</sup></button>
+                    <button class="btn" onClick="powerCalc('e-x')">e<sup>x</sup></button>
+                    <button class="btn" onClick="powerCalc('10x')">10<sup>x</sup></button>
+                    <button class="btn" onClick="action('7')">7</button>
+                    <button class="btn" onClick="action('8')">8</button>
+                    <button class="btn" onClick="action('9')">9</button>
+                    <button class="btn btn-orange" onClick="action('*')">X</button>
+                </div>
+                <div class="btn-third">
+                    <button class="btn" onClick="powerCalc('1/x')"><sup>1</sup>/<sub>x</sub></button>
+                    <button class="btn" onClick="powerCalc('square2')"><sup>2</sup>&#8730x</button>
+                    <button class="btn" onClick="powerCalc('square3')"><sup>3</sup>&#8730x</button>
+                    <button class="btn" onClick="action('squareY')"><sup>y</sup>&#8730x</button>
+                    <button class="btn" onClick="powerCalc('ln')">ln</button>
+                    <button class="btn" onClick="powerCalc('log10')">log<sub>10</sub></button>
+                    <button class="btn" onClick="action('4')">4</button>
+                    <button class="btn" onClick="action('5')">5</button>
+                    <button class="btn" onClick="action('6')">6</button>
+                    <button class="btn btn-orange" onClick="action('-')">-</button>
+                </div>
+                <div class="btn-fourth">
+                    <button class="btn" onClick="powerCalc('x!')">x!</button>
+                    <button class="btn" onClick="powerCalc('sin')">sin</button>
+                    <button class="btn" onClick="powerCalc('cos')">cos</button>
+                    <button class="btn" onClick="powerCalc('tan')">tan</button>
+                    <button class="btn" onClick="powerCalc('e')">e</button>
+                    <button class="btn" onClick="action('ee')">EE</button>
+                    <button class="btn" onClick="action('1')">1</button>
+                    <button class="btn" onClick="action('2')">2</button>
+                    <button class="btn" onClick="action('3')">3</button>
+                    <button class="btn btn-orange" onClick="action('+')">+</button>
+                </div>
+                <div class="btn-fifth">
+                    <button class="rad btn" onClick="changeNum()">Rad</button>
+                    <button class="btn" onClick="powerCalc('sinh')">sinh</button>
+                    <button class="btn" onClick="powerCalc('cosh')">cosh</button>
+                    <button class="btn" onClick="powerCalc('tanh')">tanh</button>
+                    <button class="btn" onClick="powerCalc('pi')">&#960</button>
+                    <button class="btn" onClick="powerCalc('rand')">Rand</button>
+                    <button class="zero btn" onClick="action('0')">0</button>
+                    <button class="btn" onClick="action('.')">,</button>
+                    <button class="btn btn-orange" onClick="action('=')">=</button>
+                </div>
+            </div>
+            <div class="main__additional-display"></div>
+        </div>    
+    </div>
+</body>
+</html>
