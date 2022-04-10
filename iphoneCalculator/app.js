@@ -204,7 +204,7 @@ function changeNum() {
     else {
         button.innerText = 'Rad';
         mainAddDisplay.innerText = '';
-        rad = false;
+        rad = false; //asd
     }
 }
   
